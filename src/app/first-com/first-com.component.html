@@ -1,0 +1,8 @@
+<p>first-com works!</p>
+<div *ngFor="let user of listUser">
+    <p>{{ user.id }} - {{ user.title }}</p>
+</div>
+<button (click)="show()">valide</button>
+<div *ngIf="verify==false">
+    <app-second-com></app-second-com>
+</div>
